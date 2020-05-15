@@ -106,7 +106,7 @@ label {
 	top: calc(50% - 1px);
 	right: 30%;
 	width: 40%;
-	border-bottom: 2px solid #000;
+	border-bottom: 2px solid #777;
 	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .open::before {

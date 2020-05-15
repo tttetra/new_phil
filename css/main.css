@@ -75,7 +75,7 @@ label {
 	cursor: pointer;
 	position: fixed;
 	top: 12px;
-	right: 0;
+	right: 3px;
 }
 /*メニューアイコン背景
 	手前に配置*/
@@ -85,9 +85,9 @@ label {
 	height: 48px;
 	background-color: #fff;
 	transition: background-color .6s, transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
-	border: 2px solid #000;
+	border: 0px solid #000;
 	border-radius: 48px;
-
+	filter: drop-shadow(0 0 2px rgba(0, 0, 0, .7));
 }
 /*開くためのメニューアイコン横線
 	open::before, open::afterで擬似要素を二つ用意し、
@@ -143,10 +143,12 @@ label {
 #navTgl:checked + .open::before {
 	border-bottom: 2px solid #fff;
 	transform: rotate(45deg);
+	filter: drop-shadow(0 0 2px rgba(255, 255, 255, .9));
 }
 #navTgl:checked + .open::after {
 	border-bottom: 2px solid #fff;
 	transform: rotate(-45deg);
+	filter: drop-shadow(0 0 2px rgba(255, 255, 255, .9));
 }
 #navTgl:checked ~ .close {
 	pointer-events: auto;
@@ -178,7 +180,8 @@ label {
 	padding: 5px 10px 10px 10px;
 	text-align: center;
 	font-size: 18px;
-	color: #c0c0c0;
+	color: #ffffff;
+	filter: drop-shadow(0 0 1px rgba(255, 255, 255, .8));
 
 }
 .menu ul {
@@ -257,7 +260,7 @@ label {
 	text-align: center;
 	width: 100%;
 	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 100;
+	font-weight: 300;
 }
 /*子階層以降共通*/
 

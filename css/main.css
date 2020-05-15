@@ -143,12 +143,10 @@ label {
 #navTgl:checked + .open::before {
 	border-bottom: 2px solid #fff;
 	transform: rotate(45deg);
-	filter: drop-shadow(0 0 2px rgba(255, 255, 255, .9));
 }
 #navTgl:checked + .open::after {
 	border-bottom: 2px solid #fff;
 	transform: rotate(-45deg);
-	filter: drop-shadow(0 0 2px rgba(255, 255, 255, .9));
 }
 #navTgl:checked ~ .close {
 	pointer-events: auto;

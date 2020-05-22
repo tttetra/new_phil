@@ -601,21 +601,26 @@ label {
 }
 
 
-table.lecture{
+
+.lecture table{
 	border: 1px solid #663300;
-	border-left:1px solid #663300;
 	border-collapse:collapse;
-	border-spacing:0;
 	background-color:#ffffff;
 	empty-cells:show;
 	font-size: small;
 	table-layout: fixed;
 	width: 100%;
+	min-width: 800px;
 }
+
+.table-scroll{
+	overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 
 .lecture tr:first-child{
 	border: 1px solid #666;
-	border-bottom: 1px solid #666;
 	color: #666;
 	padding: 0.5em;
 	text-align: center;
@@ -629,7 +634,6 @@ table.lecture{
 
 .lecture td{
 	border:1px solid #666;
-	border-bottom:1px solid #666;
 	padding:0.5em;
 }
 
@@ -640,8 +644,6 @@ table.lecture{
 	font-family: sans-serif;
 	font-weight:700;
 }
-
-
 
 .lecturer {
 	padding-left: 1em;

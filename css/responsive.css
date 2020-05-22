@@ -10,7 +10,7 @@
   }
 
   .profile, .prof {
-  	padding: 60px 30px 15px 30px;
+    padding: 60px 30px 15px 30px;
   }
 
   .info > .info-parts {
@@ -18,8 +18,13 @@
   }
 
   .contents .description{
-  	max-width: 1000px;
+    max-width: 1000px;
   }
+
+  .lecture h1 {
+    font-size: 175%;
+  }
+
 }
 
 @media (max-width: 670px) {
@@ -28,7 +33,7 @@
     height: 70px;
   }
   .profile, .prof {
-  	padding: 20px 20px 10px 20px;
+    padding: 20px 20px 10px 20px;
   }
   .gnav {
     display: none;
@@ -43,14 +48,10 @@
     display: block;
   }
   *{
-  	font-family: 'Noto Sans JP', sans-serif;
-  	font-weight: 400;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
   }
-  table.lecture{
-  	font-size: 30%;
-  }
-
-  .lecture td:first-child{
-  	width: 20px;
+  .lecture h1 {
+    font-size: 150%;
   }
 }

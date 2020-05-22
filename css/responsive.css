@@ -49,6 +49,11 @@
   .open, .close, .menu {
     display: block;
   }
+
+  .category {
+    padding: 10px 0;
+  }
+
   *{
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;

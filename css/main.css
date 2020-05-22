@@ -600,8 +600,6 @@ label {
   border-left-color: #ffffff;
 }
 
-
-
 .lecture table{
 	border: 1px solid #663300;
 	border-collapse:collapse;
@@ -610,7 +608,6 @@ label {
 	font-size: small;
 	table-layout: fixed;
 	width: 100%;
-	min-width: 800px;
 }
 
 .table-scroll{

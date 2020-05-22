@@ -24,7 +24,9 @@
   .lecture h1 {
     font-size: 175%;
   }
-
+  .lecture p{
+    font-size: 80%;
+  }
 }
 
 @media (max-width: 670px) {
@@ -51,7 +53,15 @@
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
   }
+
   .lecture h1 {
     font-size: 150%;
   }
+  .lecture p{
+    font-size: 50%;
+  }
+  .lecture table {
+    min-width: 600px;
+  }
+
 }

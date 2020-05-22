@@ -657,7 +657,8 @@ label {
 
 .lecture-title {
 	padding-left: 1em;
-	color: navy;
+	color: #808080;
+	font-weight:500;
 }
 
 .lecture-title:not(:last-child) {

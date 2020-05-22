@@ -535,7 +535,8 @@ label {
 
 /* news */
 .news .description{
-	color: navy;
+	color: #808080;
+	font-weight: 400;
 }
 
 /* リストの三角形 */

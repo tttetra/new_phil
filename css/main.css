@@ -209,10 +209,11 @@ label {
 	transform: none;
 }
 
-/*基本は隠し、幅が小さい場合だけresponsive.cssで対応*/
+/*基本は隠し、幅が小さい場合だけresponsive.cssで対応
 .open, .close, .menu {
 	display: none;
 }
+*/
 
 .top {
 	max-width: 1170px;
@@ -468,31 +469,32 @@ label {
 	border-bottom: 1px solid #000;
 }
 
-.prof .sub-section:not(:last-child) {
+.prof .subsection:not(:last-child) {
 	border-bottom: 1px dotted #000;
 }
 
-.sub-section > h3 {
+.subsection > h3 {
 	border: none;
 	padding: 5px 5px 0 5px;
 	color: gray;
 }
 
-.sub-section > ul {
+.subsection > ul {
 	padding: 5px;
 }
 
-.sub-section > ul > li {
+.subsection > ul > li {
 	padding: 5px 15px;
 }
 
-.research > p, .course > p {
+.research p, .course > p {
 	padding: 10px 5px 0px 5px;
 	text-indent: 1em;
 }
 
 .category-name{
-	padding: 30px 0;
+	padding-top: 30px;
+	padding-bottom: 10px;
 	font-family: 'Noto Serif JP', serif;
 	font-weight:700;
 }
@@ -506,18 +508,40 @@ label {
 	padding: 2px 0 7px 2.5em;
 }
 
+.about h2 {
+	border-bottom: 1px solid #000;
+}
+
+.about .subsection {
+	padding-bottom: 30px;
+}
+
+.about .subsubsection {
+	padding: 15px;
+}
+
+.about .teacher-name {
+	font-family: 'Noto Serif JP', serif;
+}
+
+.about .teacher {
+	border-bottom: 1px dotted #000;
+}
+
+.about .subsubsection p {
+	padding-left: 1em;
+}
+
+
 /* news */
 .news .description{
 	color: navy;
 }
 
-
-
 /* リストの三角形 */
 .description, .name, .paper-title, .item{
 	position: relative;
 }
-
 
 .item a{
 	padding-left: 20px;
@@ -554,7 +578,8 @@ label {
 }
 
 
-.description:before, .description:after, .name:before, .name:after, .paper-title:before, .paper-title:after {
+.description:before, .description:after, .name:before, .name:after,
+.paper-title:before, .paper-title:after {
 	content: '';
 	display: inline-block;
 	position: absolute;
@@ -573,4 +598,67 @@ label {
   z-index: 1;
   margin-left: -3px;
   border-left-color: #ffffff;
+}
+
+
+table.lecture{
+	border: 1px solid #663300;
+	border-left:1px solid #663300;
+	border-collapse:collapse;
+	border-spacing:0;
+	background-color:#ffffff;
+	empty-cells:show;
+	font-size: small;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.lecture tr:first-child{
+	border: 1px solid #666;
+	border-bottom: 1px solid #666;
+	color: #666;
+	padding: 0.5em;
+	text-align: center;
+}
+
+.lecture .date > td{
+	font-family: 'Noto Serif JP', serif;
+	font-weight:700;
+}
+
+
+.lecture td{
+	border:1px solid #666;
+	border-bottom:1px solid #666;
+	padding:0.5em;
+}
+
+.lecture td:first-child{
+	color: #666;
+	text-align: center;
+	width: 2em;
+	font-family: sans-serif;
+	font-weight:700;
+}
+
+
+
+.lecturer {
+	padding-left: 1em;
+	text-indent: -1em;
+	font-family: 'Noto Serif JP', serif;
+	font-weight:700;
+}
+
+.lecture-subject {
+	padding-left: 1em;
+}
+
+.lecture-title {
+	padding-left: 1em;
+	color: navy;
+}
+
+.lecture-title:not(:last-child) {
+	padding-bottom: 10px;
 }

@@ -46,4 +46,11 @@
   	font-family: 'Noto Sans JP', sans-serif;
   	font-weight: 400;
   }
+  table.lecture{
+  	font-size: 30%;
+  }
+
+  .lecture td:first-child{
+  	width: 20px;
+  }
 }

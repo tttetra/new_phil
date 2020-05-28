@@ -11,7 +11,7 @@ a {
 	text-decoration: none;
 }
 
-li {
+ul > li {
 	list-style: none;
 }
 
@@ -288,7 +288,7 @@ label {
 }
 
 /* gnavのリストの三角形 */
-.gnav li li:before, .gnav li li:after{
+.gnav li li:before, .gnav li li::after{
 	content: '';
 	display: inline-block;
 	position: absolute;
@@ -303,7 +303,7 @@ label {
 	border-left: 6px solid #fff;
 }
 
-.gnav li li:after{
+.gnav li li::after{
 	z-index: 1;
   margin-left: -3px;
   border-left-color: #000;
@@ -313,7 +313,7 @@ label {
   border-left-color: rgba( 255, 255, 255, 1);
 }
 
-.gnav li li:hover:after {
+.gnav li li:hover::after {
   border-left-color: #404040;
 	transition: border-left-color .5s;
 }
@@ -473,6 +473,60 @@ label {
 	border-bottom: 1px dotted #000;
 }
 
+.library .subsection {
+	padding-bottom: 30px;
+}
+
+
+.library .subsection > p {
+	padding: 5px 5px 5px 1em;
+}
+
+.belongs {
+	padding-bottom: 15px;
+}
+
+.library .belongs > h3 {
+	color: #808080;
+	border-left: 1px solid #808080;
+	padding: 2px 10px;
+	font-weight: 500;
+}
+
+.library .belongs > h3:nth-child(2) {
+	padding-left: 30px;
+}
+.library .belongs > h3:nth-child(3) {
+	padding-left: 50px;
+}
+.library .belongs > h3:last-child {
+	border-bottom: 1px solid #808080;
+}
+
+.intro > p {
+	text-indent: 1em;
+}
+
+.library .subsubsection > ol {
+  margin-left: 10px;/*はみ出ないように調整*/
+  padding: 0.5em 0.5em 0.5em 2em;
+}
+
+.library .subsubsection > ol li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+}
+
+.intro ol {
+	margin-left: 30px;/*はみ出ないように調整*/
+	padding: 0.5em 0.5em 0.5em 2em;
+}
+
+.intro ol li {
+  line-height: 1;
+  padding: 0.5em 0;
+}
+
 .subsection > h3 {
 	border: none;
 	padding: 5px 5px 0 5px;
@@ -492,7 +546,7 @@ label {
 	text-indent: 1em;
 }
 
-.category-name{
+.category-name {
 	padding-top: 30px;
 	padding-bottom: 10px;
 	font-family: 'Noto Serif JP', serif;
@@ -541,12 +595,16 @@ label {
 }
 
 /* リストの三角形 */
-.description, .name, .paper-title, .item{
+.description, .name, .paper-title, .item, .triangle{
 	position: relative;
 }
 
-.item a{
+.item a {
 	padding-left: 20px;
+}
+
+.triangle p {
+	padding-left: 10px;
 }
 
 .item a::before, .item a::after{
@@ -580,8 +638,8 @@ label {
 }
 
 
-.description:before, .description:after, .name:before, .name:after,
-.paper-title:before, .paper-title:after {
+.description:before, .description::after, .name:before, .name::after,
+.paper-title:before, .paper-title::after, .triangle::after, .triangle::before {
 	content: '';
 	display: inline-block;
 	position: absolute;
@@ -596,7 +654,7 @@ label {
 	border-left: 6px solid #000000;
 }
 
-.description:after, .name:after, .paper-title:after {
+.description::after, .name::after, .paper-title::after, .triangle::after {
   z-index: 1;
   margin-left: -3px;
   border-left-color: #ffffff;

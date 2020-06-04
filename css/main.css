@@ -47,6 +47,25 @@ footer {
 .header-left{
 	float: left;
 }
+.tetsugakukai {
+	padding-top: 2px;
+	padding-right: 30px;
+	float: right;
+}
+.tetsugakukai a {
+	font-size: 20px;
+	font-weight: 100;
+	color: #333;
+	font-family: 'Noto Serif JP', serif;
+}
+
+a[target="_blank"] {
+	padding-left: 28px;
+	margin-left:5px;
+	background: url(../img/icon_blank.png) left center/18px auto no-repeat;
+}
+
+
 
 .footer-left{
 	float: left;

@@ -5,6 +5,21 @@
     padding: 15px 30px;
     height: 80px;
   }
+
+  .tetsugakukai {
+  	padding-top: 8px;
+  	padding-right: 30px;
+  	float: right;
+  }
+
+  .tetsugakukai a {
+    color: #333;
+    font-weight: 100;
+    font-size: 18px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+
   .top, .top-photo {
     padding: 0 30px;
   }
@@ -34,6 +49,25 @@
     padding: 10px 20px;
     height: 70px;
   }
+
+  .tetsugakukai {
+  	padding-top: 15px;
+  	padding-right: 40px;
+  	float: right;
+  }
+  .tetsugakukai a {
+    color: #333;
+    font-weight: 100;
+    font-size: 15px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+  a[target="_blank"] {
+  	padding-left: 28px;
+  	margin-left:5px;
+  	background: url(../img/icon_blank.png) left center/15px auto no-repeat;
+  }
+
   .profile, .prof {
     padding: 20px 20px 10px 20px;
   }

@@ -44,6 +44,11 @@ footer {
 	margin: 0 auto;
 }
 
+.right {
+	float: right;
+	padding: 15px;
+}
+
 .header-left{
 	float: left;
 }
@@ -59,12 +64,17 @@ footer {
 	font-family: 'Noto Serif JP', serif;
 }
 
-a[target="_blank"] {
+.tetsugakukai > a[target="_blank"] {
 	padding-left: 28px;
 	margin-left:5px;
 	background: url(../img/icon_blank.png) left center/18px auto no-repeat;
 }
 
+a[target="_blank"].right_out {
+	padding-right: 25px;
+	margin-right:5px;
+	background: url(../img/icon_blank.png) right center/12px auto no-repeat;
+}
 
 
 .footer-left{
@@ -480,12 +490,25 @@ label {
 	text-align: left;
 }
 
-.prof .section {
+.prof .section, .report .section {
 	padding-bottom: 50px;
 }
 
-.prof .section > h2 {
+.prof .section > h2, .report .section > h2 {
 	border-bottom: 1px solid #000;
+}
+
+.report .section > h2 {
+	font-family: 'Noto Serif JP', serif;
+	font-weight:400;
+}
+
+.report .subsection {
+	padding: 10px;
+}
+
+.report .subsection > ul {
+	padding: 10px 0 10px 20px;
 }
 
 .prof .subsection:not(:last-child) {
@@ -497,8 +520,11 @@ label {
 }
 
 
-.library .subsection > p {
+.library .subsection > p, .report .subsection > p {
 	padding: 5px 5px 5px 1em;
+}
+.report .subsection > p {
+	text-indent: 1em;
 }
 
 .belongs {
@@ -625,8 +651,8 @@ label {
 	padding-left: 20px;
 }
 
-.triangle p {
-	padding-left: 10px;
+.triangle a {
+	margin-left: 10px;
 }
 
 .item a::before, .item a::after{

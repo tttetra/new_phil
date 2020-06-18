@@ -62,7 +62,7 @@
     font-family: 'Noto Serif JP', serif;
 }
 
-  a[target="_blank"] {
+  .tetsugakukai > a[target="_blank"] {
   	padding-left: 24px;
   	margin-left:5px;
   	background: url(../img/icon_blank.png) left center/15px auto no-repeat;

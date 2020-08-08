@@ -565,6 +565,28 @@ label {
   padding: 0.5em 0;
 }
 
+.research ol{
+  counter-reset: item;
+  list-style-type: none;
+  padding: 10px 10px 0 10px;
+}
+.research ol ol{
+  padding-left: 1em;
+}
+.research ol > li{
+  text-indent: -1.3em;
+  padding-left: 1.3em;
+}
+.research ol > li:before {
+  counter-increment: item;
+  content: counter(item)')';
+  /* 以下は自由に装飾... */
+  padding-right: .5em;
+  font-weight: bold;
+  color: #000;
+}
+
+
 .intro ol {
 	margin-left: 30px;/*はみ出ないように調整*/
 	padding: 0.5em 0.5em 0.5em 2em;
